@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav
+               mode="side"></mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <button mat-button
+            (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My TODOS</span>
+
+  </mat-toolbar>
+</mat-sidenav-container>

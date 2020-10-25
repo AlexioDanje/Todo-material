@@ -1,0 +1,14 @@
+
+<mat-card class="update-todo" id="modal-content-wrapper">
+  <mat-card-header>
+    <mat-card-title><h2>Update Todo</h2></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field >
+      <mat-label>Todo</mat-label>
+      <input matInput required [(ngModel)]="this.todo.title" name="title"/>
+    </mat-form-field>
+    <button mat-raised-button id="modal-action-button" (click)="update()">Update</button>
+    <button mat-raised-button id="modal-cancel-button" (click)="closeModal()">Go back</button>
+  </mat-card-content>
+</mat-card>

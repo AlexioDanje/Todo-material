@@ -1,0 +1,16 @@
+
+<mat-card class="add-todo">
+  <mat-card-header>
+    <mat-card-title><h2>Add Todo</h2></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field class="with">
+      <mat-label>Todo Task</mat-label>
+      <input matInput required [(ngModel)]="todo.title" name="title"/>
+     </mat-form-field>
+      <button mat-raised-button color="primary" (click)="saveTodo()">Add</button>
+  </mat-card-content>
+</mat-card>
+
+
+
